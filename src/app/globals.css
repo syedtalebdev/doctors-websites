@@ -15,6 +15,13 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Long URLs / emails wrap instead of overflowing on small screens */
+img,
+svg {
+  max-width: 100%;
 }
 
 /* Subtle gold gradient divider */

@@ -73,13 +73,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-700 text-white font-semibold tracking-[0.5px] px-6 py-3 rounded-md min-h-[44px] shadow-sm transition-colors"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-gold-600 hover:bg-gold-700 text-white font-semibold tracking-[0.5px] px-6 py-3 rounded-md min-h-[44px] shadow-sm transition-colors"
               >
                 Book an appointment
               </a>
               <a
                 href="#qualifications"
-                className="inline-flex items-center justify-center gap-2 border border-cream-300 hover:border-ink-300 text-ink-800 hover:bg-cream-50 font-semibold tracking-[0.5px] px-6 py-3 rounded-md min-h-[44px] transition-colors"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 border border-cream-300 hover:border-ink-300 text-ink-800 hover:bg-cream-50 font-semibold tracking-[0.5px] px-6 py-3 rounded-md min-h-[44px] transition-colors"
               >
                 View qualifications
               </a>
@@ -102,16 +102,16 @@ export default function Hero() {
               </div>
 
               {/* Credential card */}
-              <div className="absolute left-3 right-3 sm:left-auto sm:right-4 bottom-4 sm:max-w-[18rem] bg-white border border-cream-200 rounded-xl shadow-lg p-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold-50 flex items-center justify-center">
-                    <Award className="w-5 h-5 text-gold-600" />
+              <div className="absolute left-3 right-3 sm:left-auto sm:right-4 bottom-3 sm:bottom-4 sm:max-w-[18rem] bg-white border border-cream-200 rounded-xl shadow-lg p-3 sm:p-4">
+                <div className="flex items-center gap-2.5 sm:gap-3">
+                  <div className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-50 flex items-center justify-center">
+                    <Award className="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" />
                   </div>
-                  <div>
-                    <div className="text-sm font-semibold text-ink-900 leading-tight">
+                  <div className="min-w-0">
+                    <div className="text-[13px] sm:text-sm font-semibold text-ink-900 leading-tight">
                       Member, Cardiological Society of India
                     </div>
-                    <div className="text-xs text-ink-400 mt-0.5">Reg. MMC 2007 · 64218</div>
+                    <div className="text-[11px] sm:text-xs text-ink-400 mt-0.5">Reg. MMC 2007 · 64218</div>
                   </div>
                 </div>
               </div>
