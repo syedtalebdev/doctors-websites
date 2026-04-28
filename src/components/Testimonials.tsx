@@ -23,35 +23,35 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-slate-50 border-y border-slate-200">
+    <section className="bg-cream-50 border-y border-cream-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="max-w-2xl mb-10">
-          <span className="inline-block text-xs font-semibold uppercase tracking-[0.18em] text-primary-700 mb-3">
+          <span className="inline-block text-xs font-medium uppercase tracking-[0.18em] text-gold-600 mb-3">
             Patient Voices
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-3">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-ink-900 leading-tight mb-3">
             What patients say
           </h2>
-          <p className="text-slate-600">A few notes from people Dr. Sharma has cared for.</p>
+          <p className="text-ink-500">A few notes from people Dr. Sharma has cared for.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-5">
           {TESTIMONIALS.map((t) => (
             <figure
               key={t.name}
-              className="bg-white border border-slate-200 rounded-xl p-6 flex flex-col"
+              className="bg-white border border-cream-200 rounded-xl p-6 flex flex-col"
             >
               <div className="flex items-center gap-0.5 mb-4">
                 {[0, 1, 2, 3, 4].map((i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary-500 text-primary-500" />
+                  <Star key={i} className="w-4 h-4 fill-gold-500 text-gold-500" />
                 ))}
               </div>
-              <blockquote className="text-slate-700 leading-relaxed flex-1">
+              <blockquote className="text-base text-ink-700 leading-[1.7] flex-1">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
-              <figcaption className="mt-5 pt-5 border-t border-slate-100">
-                <div className="font-semibold text-slate-900 text-sm">{t.name}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{t.relation}</div>
+              <figcaption className="mt-5 pt-5 border-t border-cream-100">
+                <div className="text-lg font-semibold text-ink-900">{t.name}</div>
+                <div className="text-[13px] font-medium text-ink-400 mt-0.5">{t.relation}</div>
               </figcaption>
             </figure>
           ))}

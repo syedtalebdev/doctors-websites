@@ -30,16 +30,16 @@ const CERTIFICATIONS = [
 
 export default function Qualifications() {
   return (
-    <section id="qualifications" className="bg-slate-50 border-y border-slate-200">
+    <section id="qualifications" className="bg-cream-50 border-y border-cream-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="max-w-2xl mb-12">
-          <span className="inline-block text-xs font-semibold uppercase tracking-[0.18em] text-primary-700 mb-3">
+          <span className="inline-block text-xs font-medium uppercase tracking-[0.18em] text-gold-600 mb-3">
             Education
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-3">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-ink-900 leading-tight mb-3">
             Qualifications &amp; Training
           </h2>
-          <p className="text-slate-600">
+          <p className="text-ink-500">
             Trained at India&apos;s top medical institutions and a leading US fellowship
             programme — with a focus on cardiology since 2006.
           </p>
@@ -51,21 +51,21 @@ export default function Qualifications() {
             {QUALIFICATIONS.map((q) => (
               <div
                 key={q.degree}
-                className="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 hover:border-primary-200 hover:shadow-sm transition-all"
+                className="bg-white border border-cream-200 rounded-xl p-5 sm:p-6 hover:border-gold-200 hover:shadow-sm transition-all"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center">
-                    <GraduationCap className="w-6 h-6 text-primary-700" />
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gold-50 flex items-center justify-center">
+                    <GraduationCap className="w-6 h-6 text-gold-600" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
-                      <h3 className="font-display text-lg sm:text-xl font-bold text-slate-900">
+                      <h3 className="font-display text-lg sm:text-xl font-semibold text-ink-900">
                         {q.degree}
                       </h3>
-                      <span className="text-sm font-semibold text-primary-700">{q.year}</span>
+                      <span className="text-sm font-semibold text-gold-600">{q.year}</span>
                     </div>
-                    <p className="text-sm sm:text-base text-slate-700 mb-1">{q.institution}</p>
-                    <p className="text-sm text-slate-500">{q.detail}</p>
+                    <p className="text-sm sm:text-base text-ink-700 mb-1">{q.institution}</p>
+                    <p className="text-sm text-ink-400">{q.detail}</p>
                   </div>
                 </div>
               </div>
@@ -73,14 +73,14 @@ export default function Qualifications() {
           </div>
 
           {/* Certifications */}
-          <div className="bg-white border border-slate-200 rounded-xl p-5 sm:p-6">
-            <h3 className="font-display text-lg font-bold text-slate-900 mb-4">
+          <div className="bg-white border border-cream-200 rounded-xl p-5 sm:p-6">
+            <h3 className="font-display text-lg sm:text-xl font-semibold text-ink-900 mb-4">
               Fellowships &amp; Memberships
             </h3>
             <ul className="space-y-3">
               {CERTIFICATIONS.map((c) => (
-                <li key={c} className="flex items-start gap-2.5 text-sm text-slate-700">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary-600 flex-shrink-0" />
+                <li key={c} className="flex items-start gap-2.5 text-sm text-ink-700">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold-500 flex-shrink-0" />
                   <span>{c}</span>
                 </li>
               ))}

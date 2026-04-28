@@ -38,13 +38,13 @@ export default function Specialties() {
     <section id="specialties" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="max-w-2xl mb-12">
-          <span className="inline-block text-xs font-semibold uppercase tracking-[0.18em] text-primary-700 mb-3">
+          <span className="inline-block text-xs font-medium uppercase tracking-[0.18em] text-gold-600 mb-3">
             Areas of Practice
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-3">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-ink-900 leading-tight mb-3">
             Specialties
           </h2>
-          <p className="text-slate-600">
+          <p className="text-ink-500">
             Comprehensive cardiac care across diagnostics, intervention, and long-term management.
           </p>
         </div>
@@ -53,15 +53,15 @@ export default function Specialties() {
           {SPECIALTIES.map((s) => (
             <div
               key={s.title}
-              className="border border-slate-200 rounded-xl p-6 bg-white hover:border-primary-300 hover:shadow-sm transition-all"
+              className="border border-cream-200 rounded-xl p-6 bg-white hover:border-gold-300 hover:shadow-sm transition-all"
             >
-              <div className="w-11 h-11 rounded-lg bg-primary-50 flex items-center justify-center mb-4">
-                <s.icon className="w-6 h-6 text-primary-700" />
+              <div className="w-11 h-11 rounded-lg bg-gold-50 flex items-center justify-center mb-4">
+                <s.icon className="w-6 h-6 text-gold-600" />
               </div>
-              <h3 className="font-display text-lg font-bold text-slate-900 mb-2">
+              <h3 className="font-display text-lg sm:text-xl font-semibold text-ink-900 mb-2">
                 {s.title}
               </h3>
-              <p className="text-sm text-slate-600 leading-relaxed">{s.desc}</p>
+              <p className="text-sm sm:text-base text-ink-500 leading-[1.6]">{s.desc}</p>
             </div>
           ))}
         </div>

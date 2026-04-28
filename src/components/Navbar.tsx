@@ -29,21 +29,21 @@ export default function Navbar() {
       <header
         className={`sticky top-0 z-40 transition-all duration-200 ${
           scrolled
-            ? 'bg-white/90 backdrop-blur-md border-b border-slate-200'
+            ? 'bg-white/90 backdrop-blur-md border-b border-cream-200'
             : 'bg-white border-b border-transparent'
         }`}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-18">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-primary-600 text-white flex items-center justify-center font-display font-bold text-lg">
+              <div className="w-9 h-9 rounded-lg bg-gold-500 text-white flex items-center justify-center font-display font-bold text-lg">
                 A
               </div>
               <div className="leading-tight">
-                <div className="font-display text-base sm:text-lg font-semibold text-slate-900">
+                <div className="font-display text-base sm:text-lg font-semibold text-ink-900">
                   Dr. Aditya Sharma
                 </div>
-                <div className="text-[10px] sm:text-[11px] text-slate-500 tracking-wide uppercase">
+                <div className="text-[10px] sm:text-[11px] text-ink-400 tracking-wide uppercase">
                   Cardiologist
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-sm font-medium text-slate-600 hover:text-primary-700 transition-colors"
+                  className="text-[15px] font-medium text-ink-500 hover:text-gold-600 transition-colors"
                 >
                   {item.label}
                 </a>
@@ -64,14 +64,14 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-3">
               <a
                 href="tel:+919820011111"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 hover:text-primary-900 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-gold-600 hover:text-gold-800 transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 <span className="hidden lg:inline">+91 98200 11111</span>
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-white bg-primary-700 hover:bg-primary-800 px-4 py-2 rounded-md shadow-sm transition-colors"
+                className="inline-flex items-center gap-1.5 text-sm sm:text-base font-semibold tracking-[0.5px] text-white bg-gold-600 hover:bg-gold-700 px-5 py-2.5 rounded-md shadow-sm transition-colors min-h-[44px]"
               >
                 Book Appointment
               </a>
@@ -80,7 +80,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setOpen(true)}
-              className="lg:hidden p-2 rounded-md hover:bg-slate-100 text-slate-700"
+              className="lg:hidden p-2 rounded-md hover:bg-cream-100 text-ink-700"
               aria-label="Open menu"
             >
               <Menu className="w-6 h-6" />
@@ -94,17 +94,17 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50 lg:hidden">
           <button
             type="button"
-            className="absolute inset-0 bg-slate-900/40"
+            className="absolute inset-0 bg-ink-900/40"
             onClick={() => setOpen(false)}
             aria-label="Close menu backdrop"
           />
           <div className="absolute right-0 top-0 bottom-0 w-72 bg-white shadow-xl flex flex-col">
-            <div className="flex items-center justify-between p-5 border-b border-slate-200">
-              <span className="font-display font-semibold text-slate-900">Menu</span>
+            <div className="flex items-center justify-between p-5 border-b border-cream-200">
+              <span className="font-display font-semibold text-ink-900">Menu</span>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="p-2 rounded-md hover:bg-slate-100 text-slate-700"
+                className="p-2 rounded-md hover:bg-cream-100 text-ink-700"
                 aria-label="Close menu"
               >
                 <X className="w-5 h-5" />
@@ -116,7 +116,7 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="px-3 py-3 rounded-md text-slate-700 font-medium hover:bg-slate-50"
+                  className="px-3 py-3 rounded-md text-ink-700 font-medium hover:bg-cream-50"
                 >
                   {item.label}
                 </a>
@@ -124,7 +124,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-3 text-center text-white bg-primary-700 hover:bg-primary-800 px-4 py-3 rounded-md font-semibold"
+                className="mt-3 text-center text-white bg-gold-600 hover:bg-gold-700 px-4 py-3 rounded-md font-semibold tracking-[0.5px] min-h-[44px] flex items-center justify-center"
               >
                 Book Appointment
               </a>
